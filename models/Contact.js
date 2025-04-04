@@ -1,7 +1,11 @@
 const mongoose = require('mongoose');
 
 
-const UserSchema = mongoose.Schema({
+const ContactSchema = mongoose.Schema({
+    user: {
+        type: mongoose.Schema.Types.ObjectId,
+        ref: 'users'
+    },
     name: {
         type: String,
         required: true
@@ -9,24 +13,21 @@ const UserSchema = mongoose.Schema({
     email: {
         type: String,
         required: true,
-        unique: true,
     },
-    password: {
+    phone: {
         type: String,
-        required: true
+        
+    },
+    type:{
+    type: String,
+    default: 'personal'
     },
     date: {
         type: Date,
         default: Date.now
     },
-    resetToken : String,
-    resetTokenExpiry: Date,
-    tokenVersion: {
-        type: Number,
-        default: 0
-    }
 });
 
-module.exports = mongoose.model('user', UserSchema)
+module.exports = mongoose.model('contact', ContactSchema)
 
 
