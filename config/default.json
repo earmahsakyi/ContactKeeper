@@ -1,0 +1,10 @@
+{
+    "mongoURI": "**************************",
+    "jwtSecret": "*****",
+    "EMAIL_HOST" : "smtp.gmail.com",
+    "EMAIL_PORT" :"587",
+    "EMAIL_USER" : "********@gmail.com",
+    "EMAIL_PASS" : "**** **** **** ****",
+    "EMAIL_FROM" : "********@gmail.com"
+
+}
