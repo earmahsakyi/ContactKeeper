@@ -90,4 +90,6 @@ Edit
   "mongoURI": "your-mongodb-uri",
   "jwtSecret": "yoursecretkey"
 }
-
+🧑‍💻 Author
+Emmanuel Armah Sakyi
+GitHub | LinkedIn
